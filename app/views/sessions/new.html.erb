@@ -1,0 +1,13 @@
+<h1>Create User</h1>
+
+<%= simple_form_for @user, url: "/sessions", method: "post" do |f| %>
+
+  <div>
+    <%= f.input :email, placeholder: 'user@domain.com' %>
+  </div>
+  <div>
+    <%= f.input :password %>
+  </div>
+
+  <%= f.button :button, 'Log In' %>
+<% end %>
